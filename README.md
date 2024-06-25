@@ -1,1 +1,2 @@
 # warehouse-zip-locator
+This was a personal project of mine which I coded in python. Assume you have 'n' number of zip codes for your 'n' number of warehouses and you wanna find out the most optimal location between all these warehouses that acts as a hub and you will need to travel the least amount of distance, this helps you find that out. It uses azure maps api to find out the distance between the assumed hub and the 'n' locations and returns the optimal location zip code.
