@@ -3,7 +3,7 @@ import json
 
 #functions
 def ziptogps(zipcode):
-    urltemp="https://atlas.microsoft.com/search/address/json?&subscription-key=9PgKvPbHvFf24jvGx59raLySDaE7USdox8rWgowue7yUNCbuLvVDJQQJ99AFACYeBjFvS6NiAAAgAZMPFmFd&api-version=1.0&language=en-US&query="+str(zipcode)+",USA"
+    urltemp="https://atlas.microsoft.com/search/address/json?&subscription-key={{your_subscription_key}}}&api-version=1.0&language=en-US&query="+str(zipcode)+",USA"
     response1 = requests.get(urltemp)
     if response1.status_code == 200:
         data1 = response1.json()
